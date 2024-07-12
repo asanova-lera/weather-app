@@ -22,22 +22,22 @@ The Weather App is a React-based application that provides current weather infor
 
 ```bash
 git clone https://github.com/your-username/weather-app.git
-Navigate to the project directory:
+2. Navigate to the project directory:
 
 cd weather-app
-Install the dependencies:
+3. Install the dependencies:
 
 npm install
 # or
 yarn install
-Running the App in Development Mode
-Start the development server:
+##Running the App in Development Mode
+1. Start the development server:
 
 npm start
 # or
 yarn start
-Open your browser and visit http://localhost:3000 to view the app.
-Building the App
+2. Open your browser and visit http://localhost:3000 to view the app.
+##Building the App
 To create an optimized production build, run:
 
 
@@ -46,7 +46,7 @@ npm run build
 yarn build
 The build artifacts will be stored in the build/ directory.
 
-API
+##API
 The application uses the OpenWeatherMap API to fetch weather data. Ensure you have a valid API key from OpenWeatherMap and replace the placeholder API key in the code with your actual key.
 
 Environment Variables
