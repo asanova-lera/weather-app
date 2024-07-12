@@ -1,13 +1,81 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-cover {
+  background-size: cover;
 }
+
+.bg-center {
+  background-position: center;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bg-opacity-50::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+/* index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #333; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+}
+
+.city-list input::placeholder {
+  color: #ccc; /* Цвет placeholder */
+}
+
+.weather p {
+  margin: 0;
+}
+
+.weather img {
+  vertical-align: middle;
+}
+
+.weather .flex {
+  align-items: center;
+}
+
+.weather .mt-2 {
+  margin-top: 0.5rem;
+}
+
+.weather .w-6, .weather .h-6 {
+  width: 1.5rem; /* Размер иконок */
+  height: 1.5rem;
+}
+
+.bg-opacity-30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.backdrop-filter {
+  backdrop-filter: blur(10px);
+}
+
